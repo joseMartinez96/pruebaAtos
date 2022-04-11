@@ -33,13 +33,7 @@ class ViewController: UIViewController {
     
     @IBAction func btnActionLogin(_ sender: Any) {
         
-        let view = ProductViewController(nibName: ProductViewController.identifier, bundle: .main)
-        
-        view.modalPresentationStyle = .overCurrentContext
-        
-        self.present(view, animated: true, completion: nil)
-        
-//        fetchLogin.fetchData(data: LoginRequest.init(userName: txtUserName.txtInputText.text!, password: txtPassWord.txtInputText.text!))
+        fetchLogin.fetchData(data: LoginRequest.init(userName: txtUserName.txtInputText.text!, password: txtPassWord.txtInputText.text!))
         
     }
     
